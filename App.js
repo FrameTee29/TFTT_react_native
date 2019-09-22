@@ -6,10 +6,11 @@ import BFSWORD1 from './BFSWORD.js';
 import Recurve from './Recurve';
 import Tearofgod from './Tear';
 import ChainVesttt from './ChainVest';
-import Negaton from './Negaton';
+import Negatonn1 from './Negaton';
 import Giant from './Giant';
 import Spatula from './Spatula';
 import Needlessly from './Needlesly';
+import Negatonn from './Negaton';
 
 class HomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -84,7 +85,7 @@ class BaseItem extends React.Component {
             <Image source={require('./Item/Negaton.jpg')} style={styles.ImageS}></Image>
             <Button
               title="Negatron Cloak"
-              onPress={() => this.props.navigation.navigate('Home')} />
+              onPress={() => this.props.navigation.navigate('Nega1')} />
           </View>
         </View>
         {/*แถวที่ 4 */}
@@ -128,6 +129,7 @@ const RootStack = createStackNavigator(
     Need:Needlessly,
     Tear1:Tearofgod,
     Chain:ChainVesttt,
+    Nega1:Negatonn1,
   },
   {
     initialRouteName: 'Home',
