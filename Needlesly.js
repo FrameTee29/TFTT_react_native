@@ -135,7 +135,7 @@ export default class Needlessly extends React.Component {
                     <View style={styles.inStru}>
                         <Image source={require('./BaseItem/Recurve/Needlessly_Large_rod.jpg')} style={styles.ImageItem}></Image>
                         <Text style={{ fontSize: 20, color: 'white' }}>+</Text>
-                        <Image source={require('./BaseItem/Recurve/Giant_Blet.jpg')} style={styles.ImageItem}></Image>
+                        <Image source={require('./BaseItem/Recurve/Spatula.jpg')} style={styles.ImageItem}></Image>
                         <Text style={{ fontSize: 20, color: 'white' }}>=</Text>
                         <Image source={require('./BaseItem/Recurve/Yumi.jpg')} style={styles.ImageItem}></Image>
                     </View>
