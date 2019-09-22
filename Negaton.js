@@ -137,8 +137,8 @@ export default class Negatonn1 extends React.Component {
                     <View style={styles.inStru}>
                         <Text style={{ fontSize: 20, color: '#9B6E38', fontWeight: 'bold' }}>Runaan's Hurricane</Text>
                         <View style={{flexDirection: 'column'}}>
-                            <Text style={{ fontSize: 10, color: 'white', }}>เพิ่ม MR +20.0การโจมตีปกติจะยิงมิสไซล์เพิ่มออกไปใส่ศัตรูเป้าหมาย</Text>
-                            <Text style={{ fontSize: 10, color: 'white', }}> สร้างความเสียหาย 75.0% จากพลังโจมตีของผู้ใช้</Text>
+                            <Text style={{ fontSize: 10, color: 'white', }}>เพิ่ม MR +20.0การโจมตีปกติจะยิงมิสไซล์เพิ่มออกไปใส่</Text>
+                            <Text style={{ fontSize: 10, color: 'white', }}> ศัตรูเป้าหมายสร้างความเสียหาย 75.0% จากพลังโจมตีของผู้ใช้</Text>
                         </View>
                     </View>
                 </View>
