@@ -63,7 +63,7 @@ class BaseItem extends React.Component {
             <Image source={require('./Item/Needlessly_Large_rod.jpg')} style={styles.ImageS}></Image>
             <Button
               title="Needlessly large rod"
-              onPress={() => this.props.navigation.navigate('Home')} />
+              onPress={() => this.props.navigation.navigate('Need')} />
           </View>
           <View style={styles.UnderItem,{marginLeft:8}}>
             <Image source={require('./Item/Tear.jpg')} style={styles.ImageS}></Image>
@@ -125,6 +125,7 @@ const RootStack = createStackNavigator(
     BaseItemAll: BaseItem,
     BFsword:BFSWORD1,
     Recurce1:Recurve,
+    Need:Needlessly,
   },
   {
     initialRouteName: 'Home',
