@@ -3,6 +3,13 @@ import { Button, View, Text, Image, StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import BFSWORD1 from './BFSWORD.js';
+import Recurce from './Recurve';
+import Tear from './Tear';
+import ChainVest from './ChainVest';
+import Negaton from './Negaton';
+import Giant from './Giant';
+import Spatula from './Spatula';
+import Needlessly from './Needlesly';
 
 class HomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
