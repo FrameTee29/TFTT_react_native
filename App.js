@@ -3,7 +3,7 @@ import { Button, View, Text, Image, StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import BFSWORD1 from './BFSWORD.js';
-import Recurce from './Recurve';
+import Recurve from './Recurve';
 import Tear from './Tear';
 import ChainVest from './ChainVest';
 import Negaton from './Negaton';
@@ -54,7 +54,7 @@ class BaseItem extends React.Component {
             <Image source={require('./Item/Recurce_Bow.jpg')} style={styles.ImageS}></Image>
             <Button
               title="Recurve Bow"
-              onPress={() => this.props.navigation.navigate('Home')} />
+              onPress={() => this.props.navigation.navigate('Recurce1')} />
           </View>
         </View>
         {/*แถวที่ 2 Needlessly large rod กับ Tear of the Goodess*/}
@@ -124,6 +124,7 @@ const RootStack = createStackNavigator(
     Home: HomeScreen,
     BaseItemAll: BaseItem,
     BFsword:BFSWORD1,
+    Recurce1:Recurve,
   },
   {
     initialRouteName: 'Home',
