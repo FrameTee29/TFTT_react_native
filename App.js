@@ -8,7 +8,7 @@ import Tearofgod from './Tear';
 import ChainVesttt from './ChainVest';
 import Negatonn1 from './Negaton';
 import Giant1 from './Giant';
-import Spatula from './Spatula';
+import Spatula1 from './Spatula';
 import Needlessly from './Needlesly';
 
 
@@ -100,7 +100,7 @@ class BaseItem extends React.Component {
             <Image source={require('./Item/Spatula.jpg')} style={styles.ImageS}></Image>
             <Button
               title="Spatula"
-              onPress={() => this.props.navigation.navigate('Home')} />
+              onPress={() => this.props.navigation.navigate('SapatulaS')} />
           </View>
         </View>
       </View>
@@ -131,6 +131,7 @@ const RootStack = createStackNavigator(
     Chain:ChainVesttt,
     Nega1:Negatonn1,
     Giants:Giant1,
+    SapatulaS:Spatula1,
   },
   {
     initialRouteName: 'Home',

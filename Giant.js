@@ -20,7 +20,7 @@ export default class Giant1 extends React.Component {
                         <Image source={require('./BaseItem/Recurve/Zeke.jpg')} style={styles.ImageItem}></Image>
                     </View>
                     <View style={styles.inStru}>
-                        <Text style={{ fontSize: 15, color: '#9B6E38', fontWeight: 'bold' }}>Zeke's Herald</Text>
+                        <Text style={{ fontSize: 20 ,color: '#9B6E38', fontWeight: 'bold' }}>Zeke's Herald</Text>
                         <View style={{ flexDirection: 'column', }}>
                             <Text style={{ fontSize: 10, color: 'white', }}>เมื่อเริ่มการต่อสู้ ผู้ใช้และเพื่อนร่วมทีมในระยะ 2.0 ช่องในแถวเดียวกัน</Text>
                             <Text style={{ fontSize: 10, color: 'white', }}>จะได้รับความเร็วโจมตี +15.0% จนจบการต่อสู้</Text>

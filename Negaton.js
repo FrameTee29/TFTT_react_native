@@ -20,7 +20,7 @@ export default class Negatonn1 extends React.Component {
                         <Image source={require('./BaseItem/Recurve/Bloodthirster.jpg')} style={styles.ImageItem}></Image>
                     </View>
                     <View style={styles.inStru}>
-                        <Text style={{ fontSize: 15, color: '#9B6E38', fontWeight: 'bold' }}>The Bloodthirster</Text>
+                        <Text style={{ fontSize: 20, color: '#9B6E38', fontWeight: 'bold' }}>The Bloodthirster</Text>
                         <Text style={{ fontSize: 10, color: 'white', }}>การโจมตีปกติจะฮีลผู้ใช้เป็นจำนวน 40.0% ของความเสียหายที่ทำ</Text>
                     </View>
                 </View>
