@@ -7,10 +7,10 @@ import Recurve from './Recurve';
 import Tearofgod from './Tear';
 import ChainVesttt from './ChainVest';
 import Negatonn1 from './Negaton';
-import Giant from './Giant';
+import Giant1 from './Giant';
 import Spatula from './Spatula';
 import Needlessly from './Needlesly';
-import Negatonn from './Negaton';
+
 
 class HomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -94,7 +94,7 @@ class BaseItem extends React.Component {
             <Image source={require('./Item/Giant_Blet.jpg')} style={styles.ImageS}></Image>
             <Button
               title="Giant Belt"
-              onPress={() => this.props.navigation.navigate('Home')} />
+              onPress={() => this.props.navigation.navigate('Giants')} />
           </View>
           <View style={styles.UnderItem,{marginLeft:8}}>
             <Image source={require('./Item/Spatula.jpg')} style={styles.ImageS}></Image>
@@ -130,6 +130,7 @@ const RootStack = createStackNavigator(
     Tear1:Tearofgod,
     Chain:ChainVesttt,
     Nega1:Negatonn1,
+    Giants:Giant1,
   },
   {
     initialRouteName: 'Home',
