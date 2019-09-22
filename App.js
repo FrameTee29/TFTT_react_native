@@ -5,7 +5,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import BFSWORD1 from './BFSWORD.js';
 import Recurve from './Recurve';
 import Tearofgod from './Tear';
-import ChainVest from './ChainVest';
+import ChainVesttt from './ChainVest';
 import Negaton from './Negaton';
 import Giant from './Giant';
 import Spatula from './Spatula';
@@ -78,7 +78,7 @@ class BaseItem extends React.Component {
             <Image source={require('./Item/Chain_Vest.jpg')} style={styles.ImageS}></Image>
             <Button
               title="Chain Vest"
-              onPress={() => this.props.navigation.navigate('Home')} />
+              onPress={() => this.props.navigation.navigate('Chain')} />
           </View>
           <View style={styles.UnderItem,{marginLeft:8}}>
             <Image source={require('./Item/Negaton.jpg')} style={styles.ImageS}></Image>
@@ -127,6 +127,7 @@ const RootStack = createStackNavigator(
     Recurce1:Recurve,
     Need:Needlessly,
     Tear1:Tearofgod,
+    Chain:ChainVesttt,
   },
   {
     initialRouteName: 'Home',

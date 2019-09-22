@@ -4,7 +4,7 @@ import { Button, View, Text, Image, StyleSheet } from 'react-native';
 export default class Tearofgod extends React.Component {
     static navigationOptions = ({ navigation }) => {
         return {
-            headerTitle: (<Text style={{ fontSize: 30, fontWeight: 'bold', color: '#110244', alignItems: 'center', }}>Needlessly Large Rod</Text>),
+            headerTitle: (<Text style={{ fontSize: 30, fontWeight: 'bold', color: '#110244', alignItems: 'center', }}>Tear of the Goddess</Text>),
         }
     }
     render() {
