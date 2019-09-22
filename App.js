@@ -42,96 +42,121 @@ class BaseItem extends React.Component {
   }
   render() {
     return (
-      <View style={{ flex: 1, backgroundColor: '#110244', alignItems: 'center',justifyContent: 'space-around', }}>
-        {/*แถวที่ 1 B.F sword กับ Recurce Bow*/}
-        <View style={styles.positionItem}> 
-          <View style={styles.UnderItem,{marginRight:8}}>
-            <Image source={require('./Item/B_F_Sword.jpg')} style={styles.ImageS}></Image>
+      <View style={{ flex: 1, backgroundColor: '#110244', justifyContent: 'space-around', flexDirection: 'column', }}>
+
+        <View style={{ flexDirection: 'row', paddingLeft: 40 }}>
+          <Image source={require('./Item/B_F_Sword.jpg')} style={styles.ImageS}></Image>
+          <View style={{ flexDirection: 'column', alignItems: 'center', paddingLeft: 85 }}>
+            <Text style={{ fontSize: 15, color: 'white', }}>พลังโจมตี +15 หน่วย</Text>
             <Button
               title="B.F Sword"
               onPress={() => this.props.navigation.navigate('BFsword')} />
           </View>
-          <View style={styles.UnderItem,{marginLeft:8}}>
-            <Image source={require('./Item/Recurce_Bow.jpg')} style={styles.ImageS}></Image>
+        </View>
+
+        <View style={{ flexDirection: 'row', paddingLeft: 40 }}>
+          <Image source={require('./Item/Recurce_Bow.jpg')} style={styles.ImageS}></Image>
+          <View style={{ flexDirection: 'column', alignItems: 'center', paddingLeft: 85 }}>
+            <Text style={{ fontSize: 15, color: 'white', }}>ความเร็วโจมตี+20.0 % </Text>
             <Button
               title="Recurve Bow"
               onPress={() => this.props.navigation.navigate('Recurce1')} />
           </View>
         </View>
-        {/*แถวที่ 2 Needlessly large rod กับ Tear of the Goodess*/}
-        <View style={styles.positionItem}> 
-          <View style={styles.UnderItem,{marginRight:8}}>
-            <Image source={require('./Item/Needlessly_Large_rod.jpg')} style={styles.ImageS}></Image>
+
+        <View style={{ flexDirection: 'row', paddingLeft: 40 }}>
+          <Image source={require('./Item/Needlessly_Large_rod.jpg')} style={styles.ImageS}></Image>
+          <View style={{ flexDirection: 'column', alignItems: 'center', paddingLeft: 72 }}>
+            <Text style={{ fontSize: 15, color: 'white', }}>พลังสกิล+20.0 %</Text>
             <Button
               title="Needlessly large rod"
               onPress={() => this.props.navigation.navigate('Need')} />
           </View>
-          <View style={styles.UnderItem,{marginLeft:8}}>
-            <Image source={require('./Item/Tear.jpg')} style={styles.ImageS}></Image>
+        </View>
+
+        <View style={{ flexDirection: 'row', paddingLeft: 40 }}>
+          <Image source={require('./Item/Tear.jpg')} style={styles.ImageS}></Image>
+          <View style={{ flexDirection: 'column', alignItems: 'center', paddingLeft: 75 }}>
+            <Text style={{ fontSize: 15, color: 'white', }}>มานา +20.0 หน่วย</Text>
             <Button
               title="Tear of the Goodess"
               onPress={() => this.props.navigation.navigate('Tear1')} />
           </View>
         </View>
-        {/*แถวที่ 3 Chain Vest กับ */}
-        <View style={styles.positionItem}> 
-          <View style={styles.UnderItem,{marginRight:8}}>
-            <Image source={require('./Item/Chain_Vest.jpg')} style={styles.ImageS}></Image>
+
+
+
+
+        <View style={{ flexDirection: 'row', paddingLeft: 40 }}>
+          <Image source={require('./Item/Chain_Vest.jpg')} style={styles.ImageS}></Image>
+          <View style={{ flexDirection: 'column', alignItems: 'center', paddingLeft: 90 }}>
+            <Text style={{ fontSize: 15, color: 'white', }}>เกราะ +20.0 หน่วย</Text>
             <Button
               title="Chain Vest"
               onPress={() => this.props.navigation.navigate('Chain')} />
           </View>
-          <View style={styles.UnderItem,{marginLeft:8}}>
-            <Image source={require('./Item/Negaton.jpg')} style={styles.ImageS}></Image>
+        </View>
+
+        <View style={{ flexDirection: 'row', paddingLeft: 40 }}>
+          <Image source={require('./Item/Negaton.jpg')} style={styles.ImageS}></Image>
+          <View style={{ flexDirection: 'column', alignItems: 'center', paddingLeft: 80 }}>
+            <Text style={{ fontSize: 15, color: 'white', }}>ต้านทานเวท +20.0 หน่วย</Text>
             <Button
               title="Negatron Cloak"
               onPress={() => this.props.navigation.navigate('Nega1')} />
           </View>
         </View>
-        {/*แถวที่ 4 */}
-        <View style={styles.positionItem}> 
-          <View style={styles.UnderItem,{marginRight:8}}>
-            <Image source={require('./Item/Giant_Blet.jpg')} style={styles.ImageS}></Image>
+
+
+        <View style={{ flexDirection: 'row', paddingLeft: 40 }}>
+          <Image source={require('./Item/Giant_Blet.jpg')} style={styles.ImageS}></Image>
+          <View style={{ flexDirection: 'column', alignItems: 'center', paddingLeft: 80 }}>
+            <Text style={{ fontSize: 15, color: 'white', }}>หลังชีวิต +200.0 หน่วย</Text>
             <Button
               title="Giant Belt"
               onPress={() => this.props.navigation.navigate('Giants')} />
           </View>
-          <View style={styles.UnderItem,{marginLeft:8}}>
-            <Image source={require('./Item/Spatula.jpg')} style={styles.ImageS}></Image>
+        </View>
+
+
+        <View style={{ flexDirection: 'row', paddingLeft: 40 }}>
+          <Image source={require('./Item/Spatula.jpg')} style={styles.ImageS}></Image>
+          <View style={{ flexDirection: 'column', alignItems: 'center', paddingLeft: 80 }}>
+            <Text style={{ fontSize: 15, color: 'white', }}>รอผสมกับไอเท็มชิ้นอื่น</Text>
             <Button
               title="Spatula"
               onPress={() => this.props.navigation.navigate('SapatulaS')} />
           </View>
         </View>
-      </View>
+      </View >
     );
   }
 }
 
 const styles = StyleSheet.create({
-  positionItem: { flex:2,alignItems: 'center', flexDirection: 'row',justifyContent: 'space-between',  },
+  positionItem: { flex: 2, alignItems: 'flex-start', flexDirection: 'row', },
   WHItem: { width: 80, height: 80, },
-  UnderItem: {flex:1, justifyContent: 'center', flexDirection: 'column',alignItems: 'center', },
-  ImageS:{width: 80, height: 80,alignItems: 'center',justifyContent: 'center',}
+  UnderItem: { flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center', },
+  ImageS: { width: 60, height: 60, alignItems: 'center', justifyContent: 'center', }
 
 });
 
 
 
 
-{/*Function สำหรับ link*/}
+{/*Function สำหรับ link*/ }
 const RootStack = createStackNavigator(
   {
     Home: HomeScreen,
     BaseItemAll: BaseItem,
-    BFsword:BFSWORD1,
-    Recurce1:Recurve,
-    Need:Needlessly,
-    Tear1:Tearofgod,
-    Chain:ChainVesttt,
-    Nega1:Negatonn1,
-    Giants:Giant1,
-    SapatulaS:Spatula1,
+    BFsword: BFSWORD1,
+    Recurce1: Recurve,
+    Need: Needlessly,
+    Tear1: Tearofgod,
+    Chain: ChainVesttt,
+    Nega1: Negatonn1,
+    Giants: Giant1,
+    SapatulaS: Spatula1,
   },
   {
     initialRouteName: 'Home',
